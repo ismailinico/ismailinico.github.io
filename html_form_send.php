@@ -1,9 +1,9 @@
 <?php
-if(isset($_POST['inputGroup1_3'])) {
+if(isset($_POST['email_input'])) {
      
     // CHANGE THE TWO LINES BELOW
     $email_to = "nico@ismaili.de";
-    $email_subject = $_POST['inputGroup1_4'];
+    $email_subject = $_POST['email_subject_input'];
     
      if(strlen($email_subject) > 1 || $email_subject == null){
          $email_subject = "No subject";
@@ -19,19 +19,19 @@ if(isset($_POST['inputGroup1_3'])) {
     }
      
     // validation expected data exists
-    if(!isset($_POST['inputGroup1_1']) || //name = 1
-        !isset($_POST['inputGroup1_2']) || //phone = 2
-        !isset($_POST['inputGroup1_3']) || //e-mail = 3
-        !isset($_POST['inputGroup1_4']) || //subject = 4
-        !isset($_POST['inputGroup1_5']) ) //message = 5
+    if(!isset($_POST['name_input']) || //name = 1
+        !isset($_POST['phone_input']) || //phone = 2
+        !isset($_POST['email_input']) || //e-mail = 3
+        !isset($_POST['email_subject_input']) || //subject = 4
+        !isset($_POST['message_input']) ) //message = 5
         { 
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
      
-    $name = $_POST['inputGroup1_1']; // required
-    $phone = $_POST['inputGroup1_2']; // not required
-    $email_from = $_POST['inputGroup1_3']; // required
-    $message = $_POST['inputGroup1_5']; // required
+    $name = $_POST['name_input']; // required
+    $phone = $_POST['phone_input']; // not required
+    $email_from = $_POST['email_input']; // required
+    $message = $_POST['message_input']; // required
      
     $error_message = "";
 
