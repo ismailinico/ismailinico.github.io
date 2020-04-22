@@ -39,6 +39,9 @@
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="/../assets/vendor/bootstrap/bootstrap.min.css" />
     <!-- CSS Implementing Plugins -->
+    <link  rel="stylesheet" href="../assets/vendor/icon-hs/style.css">
+    <link  rel="stylesheet" href="../assets/vendor/fancybox/jquery.fancybox.min.css">
+    <link  rel="stylesheet" href="../assets/vendor/slick-carousel/slick/slick.css">
     <link
       rel="stylesheet"
       href="/../assets/vendor/icon-awesome/css/font-awesome.min.css"
@@ -217,7 +220,7 @@
             <h2
               class="u-heading-v2__title g-line-height-1 g-letter-spacing-2 g-font-size-30 g-font-size-40--md mb-0"
             >
-              PET-spektive
+              PET-spective
             </h2>
           </div>
         </div>
@@ -380,8 +383,12 @@
     <script src="/../assets/vendor/appear.js"></script>
     <script src="/../assets/vendor/slick-carousel/slick/slick.js"></script>
     <script src="/../assets/vendor/gmaps/gmaps.min.js"></script>
+    <script  src="../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script  src="../assets/vendor/slick-carousel/slick/slick.js"></script>
 
     <!-- JS Unify -->
+    <script  src="../assets/js/components/hs.popup.js"></script>
+    <script  src="../assets/js/components/hs.carousel.js"></script>
     <script src="/../assets/js/hs.core.js"></script>
     <script src="/../assets/js/components/hs.header.js"></script>
     <script src="/../assets/js/helpers/hs.hamburgers.js"></script>
@@ -395,6 +402,16 @@
     <script src="/../assets/js/custom.js"></script>
 
     <!-- JS Plugins Init. -->
+    <script >
+      $(document).on('ready', function () {
+        // initialization of popups
+        $.HSCore.components.HSPopup.init('.js-fancybox');
+
+        // initialization of carousel
+        $.HSCore.components.HSCarousel.init('.js-carousel');
+      });
+    </script>
+    
     <script>
       // initialization of google map
       function initMap() {
