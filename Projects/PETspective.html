@@ -376,24 +376,6 @@
       </a>
     </main>
 
-     <!-- JS Implementing Plugins -->
-     <script  src="../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-     <script  src="../assets/vendor/slick-carousel/slick/slick.js"></script>
-
-     <!-- JS Unify -->
-     <script  src="../assets/js/components/hs.popup.js"></script>
-     <script  src="../assets/js/components/hs.carousel.js"></script>
-
-     <!-- JS Plugins Init. -->
-     <script >
-       $(document).on('ready', function () {
-         // initialization of popups
-         $.HSCore.components.HSPopup.init('.js-fancybox');
-
-         // initialization of carousel
-         $.HSCore.components.HSCarousel.init('.js-carousel');
-       });
-     </script>
     <!-- JS Global Compulsory -->
     <script src="/../assets/vendor/jquery/jquery.min.js"></script>
     <script src="/../assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
@@ -402,6 +384,7 @@
 
     <!-- JS Implementing Plugins -->
     <script src="/../assets/vendor/appear.js"></script>
+    <script  src="/../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
     <script src="/../assets/vendor/slick-carousel/slick/slick.js"></script>
     <script src="/../assets/vendor/gmaps/gmaps.min.js"></script>
 
@@ -411,6 +394,7 @@
     <script src="/../assets/js/helpers/hs.hamburgers.js"></script>
     <script src="/../assets/js/components/hs.scroll-nav.js"></script>
     <script src="/../assets/js/components/hs.tabs.js"></script>
+    <script  src="/../assets/js/components/hs.popup.js"></script>
     <script src="/../assets/js/components/hs.carousel.js"></script>
     <script src="/../assets/js/components/gmap/hs.map.js"></script>
     <script src="/../assets/js/components/hs.go-to.js"></script>
@@ -420,12 +404,10 @@
 
     <!-- JS Plugins Init. -->
     <script>
-      // initialization of google map
-      function initMap() {
-        $.HSCore.components.HSGMap.init(".js-g-map");
-      }
-
       $(document).on("ready", function () {
+         // initialization of popups
+         $.HSCore.components.HSPopup.init('.js-fancybox');
+
         // initialization of carousel
         $.HSCore.components.HSCarousel.init(".js-carousel");
 
@@ -459,9 +441,5 @@
         }, 200);
       });
     </script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmb14gLx-snWahkh3StvLxmGfZe2g023Y&callback=initMap"
-      async
-    ></script>
   </body>
 </html>
