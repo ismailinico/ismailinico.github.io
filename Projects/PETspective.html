@@ -405,25 +405,6 @@
         <i class="hs-icon hs-icon-arrow-top"></i>
       </a>
     </main>
-
-     <!-- JS Implementing Plugins -->
-     <script  src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-     <script  src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
-
-     <!-- JS Unify -->
-     <script  src="../../assets/js/components/hs.popup.js"></script>
-     <script  src="../../assets/js/components/hs.carousel.js"></script>
-
-     <!-- JS Plugins Init. -->
-     <script >
-       $(document).on('ready', function () {
-         // initialization of popups
-         $.HSCore.components.HSPopup.init('.js-fancybox');
-
-         // initialization of carousel
-         $.HSCore.components.HSCarousel.init('.js-carousel');
-       });
-     </script>
      
     <!-- JS Global Compulsory -->
     <script src="/../assets/vendor/jquery/jquery.min.js"></script>
@@ -445,6 +426,25 @@
     <script src="/../assets/js/components/hs.carousel.js"></script>
     <script src="/../assets/js/components/gmap/hs.map.js"></script>
     <script src="/../assets/js/components/hs.go-to.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script  src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script  src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
+
+    <!-- JS Unify -->
+    <script  src="../../assets/js/components/hs.popup.js"></script>
+    <script  src="../../assets/js/components/hs.carousel.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script >
+      $(document).on('ready', function () {
+        // initialization of popups
+        $.HSCore.components.HSPopup.init('.js-fancybox');
+
+        // initialization of carousel
+        $.HSCore.components.HSCarousel.init('.js-carousel');
+      });
+    </script>
 
     <!-- JS Customization -->
     <script src="/../assets/js/custom.js"></script>
