@@ -39,6 +39,10 @@
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="/../assets/vendor/bootstrap/bootstrap.min.css" />
     <!-- CSS Implementing Plugins -->
+    <link  rel="stylesheet" href="/../assets/vendor/icon-hs/style.css">
+    <link  rel="stylesheet" href="/../assets/vendor/fancybox/jquery.fancybox.min.css">
+    <link  rel="stylesheet" href="/../assets/vendor/slick-carousel/slick/slick.css">
+    <!-- CSS Implementing Plugins -->
     <link
       rel="stylesheet"
       href="/../assets/vendor/icon-awesome/css/font-awesome.min.css"
@@ -242,7 +246,73 @@
               </div>
             </div>
           </div>
-      </section>
+          <!-- Gallery -->
+          <div id="carousel-08-1" class="js-carousel text-center g-mb-20" data-infinite="true" data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-35 g-height-40 g-font-size-18 g-color-gray g-bg-white g-mt-minus-10" data-arrow-left-classes="fa fa-angle-left g-left-0" data-arrow-right-classes="fa fa-angle-right g-right-0" data-nav-for="#carousel-08-2">
+            <div class="js-slide">
+              <a class="js-fancybox d-block g-pos-rel" href="javascript:;" data-fancybox="lightbox-gallery--08-1" data-src="../assets/img-temp/600x605/img1.jpg" data-caption="Lightbox Gallery">
+                <img class="img-fluid w-100" src="../assets/img-temp/600x605/img1.jpg" alt="Image Description">
+              </a>
+            </div>
+          
+            <div class="js-slide">
+              <a class="js-fancybox d-block g-pos-rel" href="javascript:;" data-fancybox="lightbox-gallery--08-1" data-src="../assets/img-temp/600x605/img2.jpg" data-caption="Lightbox Gallery">
+                <img class="img-fluid w-100" src="../assets/img-temp/600x605/img2.jpg" alt="Image Description">
+              </a>
+            </div>
+          
+            <div class="js-slide">
+              <a class="js-fancybox d-block g-pos-rel" href="javascript:;" data-fancybox="lightbox-gallery--08-1" data-src="../assets/img-temp/600x605/img3.jpg" data-caption="Lightbox Gallery">
+                <img class="img-fluid w-100" src="../assets/img-temp/600x605/img3.jpg" alt="Image Description">
+              </a>
+            </div>
+          
+            <div class="js-slide">
+              <a class="js-fancybox d-block g-pos-rel" href="javascript:;" data-fancybox="lightbox-gallery--08-1" data-src="../assets/img-temp/600x605/img4.jpg" data-caption="Lightbox Gallery">
+                <img class="img-fluid w-100" src="../assets/img-temp/600x605/img4.jpg" alt="Image Description">
+              </a>
+            </div>
+          
+            <div class="js-slide">
+              <a class="js-fancybox d-block g-pos-rel" href="javascript:;" data-fancybox="lightbox-gallery--08-1" data-src="../assets/img-temp/600x605/img5.jpg" data-caption="Lightbox Gallery">
+                <img class="img-fluid w-100" src="../assets/img-temp/600x605/img5.jpg" alt="Image Description">
+              </a>
+            </div>
+          
+            <div class="js-slide">
+              <a class="js-fancybox d-block g-pos-rel" href="javascript:;" data-fancybox="lightbox-gallery--08-1" data-src="../assets/img-temp/600x605/img6.jpg" data-caption="Lightbox Gallery">
+                <img class="img-fluid w-100" src="../assets/img-temp/600x605/img6.jpg" alt="Image Description">
+              </a>
+            </div>
+          </div>
+          
+          <div id="carousel-08-2" class="js-carousel text-center g-mx-minus-10 u-carousel-v3" data-infinite="true" data-center-mode="true" data-slides-show="4" data-is-thumbs="true" data-nav-for="#carousel-08-1">
+            <div class="js-slide g-px-10">
+              <img class="img-fluid w-100" src="../assets/img-temp/600x605/img1.jpg" alt="Image Description">
+            </div>
+          
+            <div class="js-slide g-px-10">
+              <img class="img-fluid w-100" src="../assets/img-temp/600x605/img2.jpg" alt="Image Description">
+            </div>
+          
+            <div class="js-slide g-px-10">
+              <img class="img-fluid w-100" src="../assets/img-temp/600x605/img3.jpg" alt="Image Description">
+            </div>
+          
+            <div class="js-slide g-px-10">
+              <img class="img-fluid w-100" src="../assets/img-temp/600x605/img4.jpg" alt="Image Description">
+            </div>
+          
+            <div class="js-slide g-px-10">
+              <img class="img-fluid w-100" src="../assets/img-temp/600x605/img5.jpg" alt="Image Description">
+            </div>
+          
+            <div class="js-slide g-px-10">
+              <img class="img-fluid w-100" src="../assets/img-temp/600x605/img6.jpg" alt="Image Description">
+            </div>
+          </div>
+      <!--Ende Gallery-->
+        </section>
+
       <!-- End Section Content -->
 
       <!-- Footer -->
@@ -306,6 +376,25 @@
       </a>
     </main>
 
+     <!-- JS Implementing Plugins -->
+     <script  src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+     <script  src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
+
+     <!-- JS Unify -->
+     <script  src="../../assets/js/components/hs.popup.js"></script>
+     <script  src="../../assets/js/components/hs.carousel.js"></script>
+
+     <!-- JS Plugins Init. -->
+     <script >
+       $(document).on('ready', function () {
+         // initialization of popups
+         $.HSCore.components.HSPopup.init('.js-fancybox');
+
+         // initialization of carousel
+         $.HSCore.components.HSCarousel.init('.js-carousel');
+       });
+     </script>
+     
     <!-- JS Global Compulsory -->
     <script src="/../assets/vendor/jquery/jquery.min.js"></script>
     <script src="/../assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
