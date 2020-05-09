@@ -54,20 +54,21 @@
     <!-- Header v1 -->
     <header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance"
       data-header-fix-moment="100">
-      <div class="dark-theme u-header__section g-bg-black-opacity-0_4 g-transition-0_3 g-py-8 g-py-17--md"
+      <div
+        class="u-header__section g-transition-0_3 g-py-8 light-theme u-theme-shadow-v1 g-bg-white g-py-10--md js-header-change-moment"
         data-header-fix-moment-exclude="dark-theme g-bg-black-opacity-0_4
           g-py-17--md" data-header-fix-moment-classes="light-theme u-theme-shadow-v1
           g-bg-white g-py-10--md">
         <nav class="navbar navbar-expand-lg p-0 g-px-15">
           <div class="container g-pos-rel">
             <a href="https://nico.ismaili.de/#home" class="g-hidden-lg-up navbar-brand mr-0">
-              <img class="d-block g-width-140 g-width-160--md" src="/../assets/img/logo-light.png"
-                alt="Logo Nico Ismaili Light" data-header-fix-moment-exclude="d-block"
-                data-header-fix-moment-classes="d-none" />
+              <img class="g-width-140 g-width-160--md d-none js-header-change-moment"
+                src="/../assets/img/logo-light.png" alt="Logo Nico Ismaili Light"
+                data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none">
 
-              <img class="d-none g-width-140 g-width-160--md" src="/../assets/img/logo-dark.png"
-                alt="Logo Nico Ismaili Dark" data-header-fix-moment-exclude="d-none"
-                data-header-fix-moment-classes="d-block" />
+              <img class="g-width-140 g-width-160--md d-block js-header-change-moment"
+                src="/../assets/img/logo-dark.png" alt="Logo Nico Ismaili Dark" data-header-fix-moment-exclude="d-none"
+                data-header-fix-moment-classes="d-block">
             </a>
 
             <!-- Navigation -->
@@ -89,12 +90,15 @@
 
                 <!-- Logo -->
                 <li class="g-hidden-lg-down nav-logo-item g-mx-15--lg">
-                  <a href="https://nico.ismaili.de/#home" class="js-go-to navbar-brand mr-0" data-type="static">
-                    <img class="d-block g-width-140 g-width-160--md" src="/../assets/img/logo-light.png" alt="Logo Nico Ismaili
-                        Light" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none" />
+                  <a href="https://nico.ismaili.de/#home" class="js-go-to navbar-brand mr-0" data-type="static"
+                    style="display: inline-block;">
+                    <img class="g-width-140 g-width-160--md d-none js-header-change-moment"
+                      src="/../assets/img/logo-light.png" alt="Logo Nico Ismaili
+                        Light" data-header-fix-moment-exclude="d-block" data-header-fix-moment-classes="d-none">
 
-                    <img class="d-none g-width-140 g-width-160--md" src="/../assets/img/logo-dark.png" alt="Logo Nico Ismaili
-                        Dark" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block" />
+                    <img class="g-width-140 g-width-160--md d-block js-header-change-moment"
+                      src="/../assets/img/logo-dark.png" alt="Logo Nico Ismaili
+                        Dark" data-header-fix-moment-exclude="d-none" data-header-fix-moment-classes="d-block">
                   </a>
                 </li>
                 <!-- End Logo -->
@@ -161,41 +165,52 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container px-0">
 
-        <audio controls="controls">
-          <source src="../assets/media/audio/Fire.mpeg" type="audio/mpeg">
-        </audio>
+        <!-- Row -->
+        <div class="row no-gutters">
 
+          <div class="col-md-12 col-lg-12">
+            <audio controls="controls">
+              <source src="../assets/media/audio/Fire.mpeg" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End Section Content -->
 
     <!-- Section Content -->
     <section class="g-pt-30 g-pb-100--md g-theme-bg-blue-dark-v1">
       <!-- Row -->
-      <div class="col-md-3 col-lg-3">
-        <div class="container">
-          <div class="g-pt-60 g-px-120">
-            <h3 class="text-uppercase g-line-height-1_2 g-font-weight-700 g-mb-25">
-              Work Process
-            </h3>
-            <p class="g-font-size-13 g-mb-15">
-              Creative freedom might sound like a good thing to most, but fellow artists may know the difficulties one
-              can encounter when no reference is given. Nevertheless I began by listening to the song itself,
-              which gave of an 80's vaporwave vibe creating a basis for my design. I began sketching out a few ideas
-              and settled on a concept in which a person licks a lollipop but the lollipop itself is actually a disco
-              ball. I then researched a small amount of reference material and started the final design. In the final
-              steps of the project I added the notorious 80's grid background and the song title in a fitting font.
-            </p>
+      <div class="row no-gutters">
+        <div class="col-md-6 col-lg-6">
+          <div class="container">
+            <div class="g-pt-60 g-px-15">
+              <h3 class="text-uppercase g-line-height-1_2 g-font-weight-700 g-mb-25">
+                Work Process
+              </h3>
+              <p class="g-font-size-13 g-mb-15">
+                Creative freedom might sound like a good thing to most, but fellow artists may know the difficulties one
+                can encounter when no reference is given. Nevertheless I began by listening to the song itself,
+                which gave of an 80's vaporwave vibe creating a basis for my design. I began sketching out a few ideas
+                and settled on a concept in which a person licks a lollipop but the lollipop itself is actually a disco
+                ball. I then researched a small amount of reference material and started the final design. In the final
+                steps of the project I added the notorious 80's grid background and the song title in a fitting font.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <div class="container g-mb-30 text-center">
+            <img class="img-fluid d-inline-block g-max-width-400 g-my-60 g-mt-100 g-mx-15"
+              src="../assets/img/Projects/CoverArt/Sketch.png" alt="Letter Template empty">
           </div>
         </div>
       </div>
 
-      <div class="col-md-7 col-lg-7">
-        <div class="container g-mb-30 text-center">
-          <img class="img-fluid d-inline-block g-max-width-400 g-mb-30 g-mx-15"
-            src="../assets/img/Projects/CoverArt/Sketch.png" alt="Letter Template empty">
-        </div>
-      </div>
     </section>
     <!-- End Section Content -->
 
@@ -204,7 +219,7 @@
       <div class="text-center g-color-gray-dark-v5 g-theme-bg-blue-dark-v1 g-py-70">
         <a class="d-block g-width-140 mx-auto g-mb-30">
           <img class="img-fluid" src="/../assets/img/logo-light.png" alt="Image
-              description" />
+              description">
         </a>
 
         <ul class="list-inline d-inline-block mb-0">
@@ -231,8 +246,9 @@
     </footer>
     <!-- End Footer -->
 
-    <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{"bottom" : 15,"right" : 15
-        }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+    <a class="js-go-to u-go-to-v1 animated" href="#" data-type="fixed" data-position="{&quot;bottom&quot; : 15,&quot;right&quot; : 15
+        }" data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn"
+      style="display: inline-block; position: fixed; opacity: 0; bottom: 15px; right: 15px;">
       <i class="hs-icon hs-icon-arrow-top"></i>
     </a>
   </main>
