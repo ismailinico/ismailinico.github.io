@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata">
+
+<head>
+    <link rel="icon" href="./assets/favicon.png" type="image/png" sizes="16x16">
+    <title>Eisdiele Napoli</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <div id="navigation" class="text-center sticky">
+            <a href="#home"><img class="logo" src="./assets/logoWhite.png"></a>
+            <a id="ham-menu" onclick="menuToggle()"><img id="menuImg" class="burger" src="./assets/burger.png"></a>
+            <a href="#home" class="nav-item">HOME</a>
+            <a href="#menu" class="nav-item">MENU</a>
+            <a href="#about" class="nav-item">ÜBER UNS</a>
+            <a href="#fotos" class="nav-item">GALERIE</a>
+            <a href="#contact" class="nav-item">KONTAKT</a>
+        </div>
+    </header>
+
+    <!-- Startseite/Willkommen -->
+    <section id="home">
+        <div id="SLIDE-BG">
+            <div class="row">
+                <div id="heading-welcome" class="col-12 text-center-center">
+                    <h1>WILLKOMMEN BEI DER EISDIELE NAPOLI</h1>
+                </div>
+            </div>
+            <div class="color-overlay"></div>
+        </div>
+    </section>
+    <!-- Menu -->
+    <section id="menu">
+        <div class="row">
+            <div class="col-12" id="menu-head">
+                <h2 class="text-center">MENU</h2>
+            </div>
+        </div>
+        <!-- Eisbecher -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">- EISBECHER -</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center img">
+                <img src="./assets/img/Menu/ice1.jpg" alt="Schokoeis-Becher">
+            </div>
+            <div class="col-4 text-center img">
+                <img src="./assets/img/Menu/ice3.jpg" alt="Himbeereis-Becher">
+            </div>
+            <div class="col-4 text-center img">
+                <img src="./assets/img/Menu/ice2.jpg" alt="Fruchtbecher">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>1. Spaghetti Eis</h4>
+                    <p>
+                        Sahne, Vanilleeis, Erdbeersoße, weiße Schokoraspel
+                    </p>
+                    <p class="price">6.90 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>2. Banana Split</h4>
+                    <p>
+                        gem. Milcheis, Banane, Sahne, Schokosoße, Nusskrokant
+                    </p>
+                    <p class="price">7.50 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>3. Fruchtbecher</h4>
+                    <p>
+                        Gem. Eis, Obstsalat, Sahne, Mangosoße
+                    </p>
+                    <p class="price">7.90 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>4. Himbeerbecher</h4>
+                    <p>
+                        gem. Eis, Himbeeren, Sahne, Himbeersoße
+                    </p>
+                    <p class="price">7.20 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>5. Haselnussbecher</h4>
+                    <p>
+                        gem. Milcheis, Sahne, Haselnüsse, Haselnusssoße
+                    </p>
+                    <p class="price">6.50 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>6. Amarettobecher</h4>
+                    <p>
+                        Sahne, Schoko-Eis, Haselnusssoße, Ameretto
+                    </p>
+                    <p class="price">6.90 €
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Kuchen -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>- KUCHEN -</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center img">
+                <img src="./assets/img/Menu/cake1.jpg" alt="Schokotorte">
+            </div>
+            <div class="col-4 text-center img">
+                <img src="./assets/img/Menu/cake2.jpg" alt="Kuchenstück">
+            </div>
+            <div class="col-4 text-center img">
+                <img src="./assets/img/Menu/cake3.jpg" alt="Kuchen">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>7. Käsekuchen</h4>
+                    <p>
+                        Kremig und luftig
+                    </p>
+                    <p class="price">3,20 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>8. Schwarzwälder Kirsch</h4>
+                    <p>
+                        Sahne, Schokostreusel und mit Kirschen bestückt
+                    </p>
+                    <p class="price">3,50 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>9. Kirsch-Amaretto-Kuchen</h4>
+                    <p>
+                        Kirschne, Amarettocreme und Amarettoplätzchen
+                    </p>
+                    <p class="price">4,00 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>10. Apfel-Nuss-Streuselkuchen</h4>
+                    <p>
+                        Enthält Äpfel und Walnüsse
+                    </p>
+                    <p class="price">3,20 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>11. Erdbeekuchen</h4>
+                    <p>
+                        Erdbeersoße, Erdbeeren und süßer Kuchenteig
+                    </p>
+                    <p class="price">3,20 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>12. Maulwurf Kuchen</h4>
+                    <p>
+                        Sahne, Schokokrümel und Schokoraspel
+                    </p>
+                    <p class="price">3,10 €
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Getränke -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">- GETRÄNKE -</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center img">
+                <img src="./assets/img/Menu/drink1.jpg" alt="Cola">
+            </div>
+            <div class="col-4 text-center img">
+                <img src="./assets/img/Menu/drink2.jpg" alt="Säfte">
+            </div>
+            <div class="col-4 text-center img">
+                <img src="./assets/img/Menu/drink3.jpg" alt="Kaffee">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>13. Wasser</h4>
+                    <p>
+                        Mineral, medium oder sprudel
+                    </p>
+                    <p class="price">1,50 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>14. Limo & Soda</h4>
+                    <p>
+                        Cola, Fanta, Sprite und Mezzo-Mix
+                    </p>
+                    <p class="price">3,00 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>15. Saft</h4>
+                    <p>
+                        O-, Apfel-, Kirsch und Bananen-Saft
+                    </p>
+                    <p class="price">2,50 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>16. Kaffee</h4>
+                    <p>
+                        Kremig oder stark
+                    </p>
+                    <p class="price">2,00 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>17. Heiße Schokolade</h4>
+                    <p>
+                        Warme Milch mit leckerem Schokoladensirup
+                    </p>
+                    <p class="price">3,00 €
+                    </p>
+                </div>
+            </div>
+            <div class="col-4 text-center menu-item">
+                <div class="bg">
+                    <h4>18. Tee</h4>
+                    <p>
+                        Pfferminz, fruchtig, oder orientalisch
+                    </p>
+                    <p class="price">1,50 €
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Über Uns -->
+    <section id="about">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">ÜBER UNS</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 text-center">
+                <img style="max-width: 200px; margin-bottom: 2em;" src="./assets/img/about/house.jpg"
+                    alt="Giovannis Haus">
+            </div>
+            <div class="col-10">
+                <p> Buon giorno! Ich bin Giovanni und hier sind ein paar Infos meiner Heimat Napoli!
+                    <br>
+                    <br>
+                    Neapel (italienisch Napoli, neapolitanisch Napule, altgriechisch: Νεάπολις „neue Stadt“) ist mit
+                    knapp einer Million Einwohnern die nach Rom und Mailand drittgrößte Stadt Italiens. Die Hauptstadt
+                    der Region Kampanien sowie der Metropolitanstadt Neapel ist ein wirtschaftliches und kulturelles
+                    Zentrum Süditaliens. Die Metropolregion hat bis zu 4,4 Millionen Einwohner. Viele Neapolitaner
+                    sprechen das stark vom Standarditalienischen abweichende Neapolitanisch.
+                    <br>
+                    <br>
+                    Die ursprüngliche griechische Siedlung trug den Namen Neapolis („Neustadt“). Später geriet sie unter
+                    römische Herrschaft. Vom Spätmittelalter bis zum 18. Jahrhundert gehörte Neapel zu den größten
+                    Städten Europas. Seine politische Geschichte ist über weite Strecken von Fremdherrschaft geprägt,
+                    zudem war es die Hauptstadt süditalienischer Reiche.
+                    <br>
+                    <br>
+                    In den inneren Stadtteilen findet man zahlreiche historische Bauten und Kulturdenkmäler; 1995 wurde
+                    die gesamte Altstadt zum UNESCO-Weltkulturerbe erklärt. Das heterogene Stadtbild bietet Vorstädte
+                    mit riesigen Wohnkomplexen und weiten Flächen im Kontrast zu den engen und stark frequentierten
+                    Gassen der Altstadt. Während in den Stadtteilen westlich des Zentrums der Reichtum konzentriert ist,
+                    findet man in den inneren Bezirken und der Altstadt teilweise Überbevölkerung und ökonomisch
+                    rückständige Gebiete. Die soziale Lage der Vorstädte ist unterschiedlich, es handelt sich teils um
+                    Arbeiterviertel, teils um im Zuge des sozialen Wohnungsbaus entstandene Satellitenstädte, teils aber
+                    auch um ländliche Gebiete. Ein großes Problem ist die überdurchschnittlich hohe Arbeitslosigkeit.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center">
+                <img src="./assets/img/about/town.jpg" alt="Altstadt von Neapel">
+            </div>
+            <div class="col-4 text-center">
+                <img src="./assets/img/about/boats.jpg" alt="Schiffe auf dem Wasser">
+            </div>
+            <div class="col-4 text-center">
+                <img src="./assets/img/about/beach.jpg" alt="Strand in Neapel">
+            </div>
+        </div>
+    </section>
+    <!-- Galerie -->
+    <section id="fotos">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">GALERIE</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center">
+                <img src="./assets/img/fotos/foto1.jpg" alt="Eisdiele innen">
+            </div>
+            <div class="col-4 text-center">
+                <img src="./assets/img/fotos/foto2.jpg" alt="Eisdiele außen">
+            </div>
+            <div class="col-4 text-center">
+                <img src="./assets/img/fotos/foto3.jpg" alt="Eistheke">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center">
+                <img src="./assets/img/fotos/foto4.jpg" alt="Eis auf der Theke">
+            </div>
+            <div class="col-4 text-center">
+                <img src="./assets/img/fotos/foto5.jpg" alt="zweite Eisdiele">
+            </div>
+            <div class="col-4 text-center">
+                <img src="./assets/img/fotos/foto6.jpg" alt="Muffins">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center">
+                <img src="./assets/img/fotos/foto7.jpg" alt="Kuchentheke">
+            </div>
+            <div class="col-4 text-center">
+                <img src="./assets/img/fotos/foto8.jpg" alt="Muffins">
+            </div>
+            <div class="col-4 text-center">
+                <img src="./assets/img/fotos/foto9.jpg" alt="Kuchenstücke">
+            </div>
+        </div>
+    </section>
+    <!-- Kontakt -->
+    <section id="contact">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">KONTAKT</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 padding-form text-center">
+                <h3>Anfahrt</h3>
+                <P class="text-center">
+                    Musterstraße 17
+                    <br>
+                    12345 Musterstadt
+                </P>
+            </div>
+            <div class="col-6 padding-form text-center">
+                <h3>Öffnungszeiten</h3>
+                <P class="text-center">
+                    Montag bis Samstag
+                    <br>
+                    10.00 Uhr bis 20.00 Uhr
+                </P>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="contact-form" class="col-12 padding-form">
+                <form name="contactform" onsubmit="transformSubmit()">
+                    <div class="row">
+                        <div class="col-6"><label for='name'>Name</label>
+                            <input type="text" name="name" placeholder="Dein Name.." required /></div>
+                        <div class="col-6"><label for='email'>E-Mail</label>
+                            <input type="text" name="eMail" placeholder="Deine E-Mail.." required /></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for='message'>Nachricht</label>
+                            <textarea name="message" placeholder="Deine nachricht..." style="min-height: 250px;"
+                                required></textarea>
+                            <div class="text-center">
+                                <button id="submitButton" type="submit">
+                                    Senden
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
